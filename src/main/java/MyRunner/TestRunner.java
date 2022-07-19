@@ -9,9 +9,13 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions(
 			 
 			features = "src/main/java/Features",//To run all the feature files
-		    //features="src/main/java/Features/ProvideSpecificFeatureFileToRun",//To run specific feature files
+		    //features="src/main/java/Features/E2E"//To run all the features under E2E
+			//features="src/main/java/Features/Functional"//To run all the features under Functional"
+			//To run specific feature files:
+			//features="src/main/java/Features/E2E/SpecificFeature
+			//features="src/main/java/Features/Functional/SpecificFeature
 			glue={"stepDefinitions"}, //the path of the step definition files
-			plugin= {"pretty","html:target/cucumber/test-output"}, //to generate a HTML Test Report
+			plugin= {"pretty","html:target/cucumber/test-output.html"}, //to generate a HTML Test Report
 			monochrome = true, //display the console output in a proper readable format
 			strict = true, //it will check if any step is not defined in step definition file
 			dryRun = false //to check the mapping is proper between feature file and step definition file
@@ -25,7 +29,3 @@ import io.cucumber.junit.CucumberOptions;
 	public class TestRunner {
 	 
 	}
-	
-	
-	
-
