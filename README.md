@@ -1,4 +1,5 @@
-# ToDoListBDDFramework
+# ToDoListAutomationFramework
+
 **Instructions to Run the Test:**
 
 **GitHub:**
@@ -36,5 +37,5 @@
 7. In @cucumberOptions Provide tags={"@E2E, @FunctionalScenarios"} to run the scenarios one after the other
    even if the first one is failed.
 8. In @cucumberOptions Provide tags=tags={~@E2E} to ignore the set of scenarios under this tag.
-9. Refresh the project and go to ToDoListTestFramework/target/cucumber/test-output to view the test Results after running the tests.
+9. Refresh the project and go to ToDoListTestFramework/test-output to view the test Results after running the tests.
    
