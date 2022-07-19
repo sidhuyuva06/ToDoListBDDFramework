@@ -1,4 +1,5 @@
-# ToDoListBDDFramework
+# ToDoListAutomationFramework
+
 **Instructions to Run the Test:**
 
 **GitHub:**
@@ -28,13 +29,14 @@
 
 1. Navigate and click on Test Runner.java file under src/main/java/My Runner.
 2. In @cucumberOptions Provide features = "src/main/java/Features" to run all the scenarios.
-3. In @cucumberOptions Provide features="src/main/java/Features/ProvideSpecificFeatureFileToRun" to run specific scenarios.
-4. In @cucumberOptions Provide tags={"@E2E"} to run all end-to-end complex scenarios.
-5. In @cucumberOptions Provide tags={"@Functional Scenarios"} to run all the basic functional scenarios.
-6. In @cucumberOptions Provide tags={"@E2E","@FunctionalScenarios"} to run the scenarios one after the other
+3. In @cucumberOptions Provide features="src/main/java/Features/E2E/ProvideSpecificFeatureFileToRun" to run E2E scenarios.
+4. In @cucumberOptions Provide features="src/main/java/Features/FunctionalScenarios/ProvideSpecificFeatureFileToRun" to run Functional scenarios.
+5. In @cucumberOptions Provide tags={"@E2E"} to run all end-to-end complex scenarios.
+6. In @cucumberOptions Provide tags={"@Functional Scenarios"} to run all the basic functional scenarios.
+7. In @cucumberOptions Provide tags={"@E2E","@FunctionalScenarios"} to run the scenarios one after the other
    only if the first one is successful.
-7. In @cucumberOptions Provide tags={"@E2E, @FunctionalScenarios"} to run the scenarios one after the other
+8. In @cucumberOptions Provide tags={"@E2E, @FunctionalScenarios"} to run the scenarios one after the other
    even if the first one is failed.
-8. In @cucumberOptions Provide tags=tags={~@E2E} to ignore the set of scenarios under this tag.
-9. Refresh the project and go to ToDoListTestFramework/target/cucumber/test-output to view the test Results after running the tests.
+9. In @cucumberOptions Provide tags=tags={~@E2E} to ignore the set of scenarios under this tag.
+10. Refresh the project and go to ToDoListTestFramework/target/cucumber/test-output.html to view the test Results after running the tests.
    
