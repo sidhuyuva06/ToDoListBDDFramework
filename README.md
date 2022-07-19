@@ -31,7 +31,7 @@
 2. In @cucumberOptions Provide features = "src/main/java/Features" to run all the scenarios.
 3. In @cucumberOptions Provide features="src/main/java/Features/E2E/ProvideSpecificFeatureFileToRun" to run E2E scenarios.
 4. In @cucumberOptions Provide features="src/main/java/Features/FunctionalScenarios/ProvideSpecificFeatureFileToRun" to run E2E scenarios.
-5  In @cucumberOptions Provide tags={"@E2E"} to run all end-to-end complex scenarios.
+5. In @cucumberOptions Provide tags={"@E2E"} to run all end-to-end complex scenarios.
 6. In @cucumberOptions Provide tags={"@Functional Scenarios"} to run all the basic functional scenarios.
 7. In @cucumberOptions Provide tags={"@E2E","@FunctionalScenarios"} to run the scenarios one after the other
    only if the first one is successful.
