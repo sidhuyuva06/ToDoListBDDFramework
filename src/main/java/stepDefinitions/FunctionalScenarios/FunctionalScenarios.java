@@ -160,7 +160,13 @@ public class FunctionalScenarios {
      wait.waitElement();
 	 }
 
-
+	 @Then("^Task complete by clicking on all the RadioButtons available before the task$")
+		public void complete_Task_Noncomplete_by_clicking_on_RadioButton_before_the_task()  {
+		    // Clicking on the Completion check box again to non complete the tasks
+		   driver.findElement(Completioncheckbox).click();
+		   driver.findElement(Completioncheckbox).click();
+		   driver.findElement(Completioncheckbox).click();
+		}
 	
 		
 
