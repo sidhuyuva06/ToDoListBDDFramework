@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 			 
-			features = "src/main/java/Features",//To run all the feature files
+			features = "src/main/java/Features/Functional",//To run all the feature files
 		    //features="src/main/java/Features/E2E"//To run all the features under E2E
 			//features="src/main/java/Features/Functional"//To run all the features under Functional"
 			//To run specific feature files:
@@ -19,8 +19,8 @@ import io.cucumber.junit.CucumberOptions;
 			monochrome = true, //display the console output in a proper readable format
 			strict = true, //it will check if any step is not defined in step definition file
 			dryRun = false //to check the mapping is proper between feature file and step definition file
-			//tags = {"@E2E"} //to run all end to end complex scenarios.	
-			//tags={"@FunctionalScenarios"}//to run all the basic functional scenarios.
+			//tags = "@E2E" //to run all end to end complex scenarios.	
+			//tags="@FunctionalScenarios"//to run all the basic functional scenarios.
 			//tags={"@E2E","@FunctionalScenarios"} to run the scenarios one after the other only if the first one is successful
 			//tags={"@E2E, @FunctionalScenarios"} to run the scenarios one after the other even if the first one is failed
 			//tags={~@E2E} to ignore the set of scenarios under this tag
