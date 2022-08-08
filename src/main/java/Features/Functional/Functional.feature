@@ -57,7 +57,7 @@ Scenario Outline: Modify a task from Completed to Non Completed from ToDo List
     
     Given Launch the To Do List URL
     When  User enters a Task "<ModifyCompletingTask>" and click enter
-    Then  Task complete by clicking on all RadioButtons before the task
+    Then  Task complete by clicking on all the RadioButtons available before the task
     And   Click on the RadioButton again to change into NonCompleted task
     Then  Close the browser
     Examples: 
